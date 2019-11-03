@@ -6,11 +6,12 @@ multiple versions of `node` on CI.
 ## Usage
 
 ```
-usage: node-fetcher.py [-h] [--channel CHANNEL] [--platform PLATFORM]
-                       [--version VERSION] [--path PATH]
+usage: node-fetcher.py [-h] [--verbose] [--channel CHANNEL]
+                       [--platform PLATFORM] [--version VERSION] [--path PATH]
 
 optional arguments:
   -h, --help           show this help message and exit
+  --verbose            Be verbose, by default there is no console output
   --channel CHANNEL    The release channel to check, e.g. "v8-canary",
                        defaults to "release"
   --platform PLATFORM  Supported platforms: {win,linux,darwin}-x64, defaults
@@ -18,7 +19,6 @@ optional arguments:
   --version VERSION    The version string prefix to match, e.g. v13
   --path PATH          The destination to extract, defaults to current working
                        directory
-
 ```
 
 Check the `node` [download](https://nodejs.org/download/) page for a list of
